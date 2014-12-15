@@ -16,13 +16,14 @@
 		<!-- Web Fonts  -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
 
-		<!-- Vendor CSS -->
+		<!-- Vendor CSS - Bootstrap, Font-awesome, Magnific Popup, & Datepicker3, Prisim -->
 		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+		<link rel="stylesheet" href="assets/vendor/prism/prism.css" />
 
-		<!-- Specific Page Vendor CSS -->
+		<!-- Specific Page Vendor CSS - Notifications -->
 		<link rel="stylesheet" href="assets/vendor/pnotify/pnotify.custom.css" />
 		
 		<!-- Specific Page Vendor CSS - Code Editor -->
@@ -791,29 +792,16 @@
 									<h6>h6. Heading 6</h6>
 									
 						<!-- Code Testing -->
-						<textarea class="form-control" id="codemirror_html_code" name="code_html" data-plugin-codemirror data-plugin-options='{ "mode": "text/html" }'>
-						<html style="color: green">
-						<!-- this is a comment -->
-						<head>
-						<title>Mixed HTML Example</title>
-						<style type="text/css">
-						  h1 {font-family: comic sans; color: #f0f;}
-						  div {background: yellow !important;}
-						  body {
-							max-width: 50em;
-							margin: 1em 2em 1em 5em;
-						  }
-						</style>
-						</head>
-						<body>
-						<h1>Mixed HTML Example</h1>
-						<script>
-						  function jsFunc(arg1, arg2) {
-							if (arg1 && arg2) document.body.innerHTML = "achoo";
-						  }
-						</script>
-						</body>
-						</html></textarea>
+<pre class=" language-html" rel="html">
+<code class=" language-html">
+<h1>h1. Heading 1</h1>
+<h2>h2. Heading 2</h2>
+<h3>h3. Heading 3</h3>
+<h4>h4. Heading 4</h4>
+<h5>h5. Heading 5</h5>
+<h6>h6. Heading 6</h6>
+</code>
+</pre>
 						<!--End Code Testing-->
 						
 						
@@ -1286,6 +1274,7 @@
 		<script src="assets/vendor/codemirror/mode/xml/xml.js"></script>
 		<script src="assets/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
 		<script src="assets/vendor/codemirror/mode/css/css.js"></script>
+		<script src="assets/vendor/prism/prism.js"></script>
 		
 		
 		<!-- Theme Base, Components and Settings -->
