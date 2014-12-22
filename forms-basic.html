@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+		<link rel="stylesheet" href="assets/vendor/prism/prism.css" />
 
 		<!-- Specific Page Vendor CSS -->		<link rel="stylesheet" href="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
 
@@ -750,18 +751,24 @@
 										<h2 class="panel-title">Form Elements</h2>
 									</header>
 									<div class="panel-body">
-										<form class="form-horizontal form-bordered" method="get">
-											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputDefault">Default</label>
-												<div class="col-md-6">
+										<form class="form-horizontal form-bordered" method="get">																			
+										
+											<div class="form-group">											
+											
+												<label class="col-md-3 control-label" for="inputDefault">Default</label>												
+												<div class="col-md-6">																								
 													<input type="text" class="form-control" id="inputDefault">
-												</div>
+													<code>&lt;input type="text" class="form-control" id="inputDefault"&gt;</code>
+												</div>																							
+												
 											</div>
 						
-											<div class="form-group">
+											<div class="form-group">											
+											
 												<label class="col-md-3 control-label" for="inputDisabled">Disabled</label>
 												<div class="col-md-6">
 													<input class="form-control" id="inputDisabled" type="text" placeholder="Disabled input here..." disabled="">
+													<code>&lt;input class="form-control" id="inputDisabled" type="text" placeholder="Disabled input here..." disabled=""&gt;</code>
 												</div>
 											</div>
 						
@@ -769,6 +776,7 @@
 												<label class="col-md-3 control-label" for="inputReadOnly">Read-Only Input</label>
 												<div class="col-md-6">
 													<input type="text" value="Read-Only Input" id="inputReadOnly" class="form-control" readonly="readonly">
+													<code>&lt;input type="text" value="Read-Only Input" id="inputReadOnly" class="form-control" readonly="readonly"&gt;</code>
 												</div>
 											</div>
 						
@@ -777,6 +785,10 @@
 												<div class="col-md-6">
 													<input type="text" class="form-control" id="inputHelpText">
 													<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+													<code>
+													&lt;input type="text" class="form-control" id="inputHelpText"&gt;<br />
+													&lt;span class="help-block"&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+													</code>
 												</div>
 											</div>
 						
@@ -784,6 +796,7 @@
 												<label class="col-md-3 control-label" for="inputRounded">Rounded Input</label>
 												<div class="col-md-6">
 													<input type="text" class="form-control input-rounded" id="inputRounded">
+													<code>&lt;input type="text" class="form-control input-rounded" id="inputRounded"&gt;</code>
 												</div>
 											</div>
 						
@@ -791,6 +804,7 @@
 												<label class="col-md-3 control-label" for="inputFocus">Input focus</label>
 												<div class="col-md-6">
 													<input class="form-control" id="inputFocus" type="text" value="This is focused...">
+													<code>&lt;input class="form-control" id="inputFocus" type="text" value="This is focused..."&gt;</code>
 												</div>
 											</div>
 						
@@ -798,6 +812,7 @@
 												<label class="col-md-3 control-label" for="inputPlaceholder">Placeholder</label>
 												<div class="col-md-6">
 													<input type="text" class="form-control" placeholder="placeholder" id="inputPlaceholder">
+													<code>&lt;input type="text" class="form-control" placeholder="placeholder" id="inputPlaceholder"&gt;</code>
 												</div>
 											</div>
 						
@@ -805,6 +820,7 @@
 												<label class="col-md-3 control-label" for="inputPassword">Password</label>
 												<div class="col-md-6">
 													<input type="password" class="form-control" placeholder="" id="inputPassword">
+													<code>&lt;input type="password" class="form-control" placeholder="" id="inputPassword"&gt;</code>
 												</div>
 											</div>
 						
@@ -812,23 +828,90 @@
 												<label class=" col-md-3 control-label">Static control</label>
 												<div class="col-lg-6">
 													<p class="form-control-static">email@example.com</p>
+													<code>&lt;p class="form-control-static"&gt;email@example.com&lt;/p&gt;</code>
 												</div>
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">Left Icon</label>
+												<label class="col-md-3 control-label">Left Icon
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalLeftIcon"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalLeftIcon" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="input-group input-group-icon">
+	<span class="input-group-addon">
+		<span class="icon"><i class="fa fa-user"></i></span>
+	</span>
+	<input type="text" class="form-control" placeholder="Left icon">
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group input-group-icon">
 														<span class="input-group-addon">
 															<span class="icon"><i class="fa fa-user"></i></span>
 														</span>
-														<input type="text" class="form-control" placeholder="Left icon">
+														<input type="text" class="form-control" placeholder="Left icon">																																																							
 													</div>
 												</div>
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">Right Icon</label>
+												<label class="col-md-3 control-label">Right Icon
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalRightIcon"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalRightIcon" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="input-group input-group-icon">
+	<input type="text" class="form-control" placeholder="Right icon">
+	<span class="input-group-addon">
+		<span class="icon"><i class="fa fa-user"></i></span>
+	</span>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group input-group-icon">
 														<input type="text" class="form-control" placeholder="Right icon">
@@ -840,7 +923,40 @@
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">Search</label>
+												<label class="col-md-3 control-label">Search
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalSearch"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalSearch" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="input-group input-search">
+	<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+	<span class="input-group-btn">
+		<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+	</span>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group input-search">
 														<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
@@ -852,7 +968,48 @@
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">File Upload</label>
+												<label class="col-md-3 control-label">File Upload
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalFileUpload"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalFileUpload" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="fileupload fileupload-new" data-provides="fileupload">
+	<div class="input-append">
+		<div class="uneditable-input">
+			<i class="fa fa-file fileupload-exists"></i>
+			<span class="fileupload-preview"></span>
+		</div>
+		<span class="btn btn-default btn-file">
+			<span class="fileupload-exists">Change</span>
+			<span class="fileupload-new">Select file</span>
+			<input type="file" />
+		</span>
+		<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
+	</div>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="fileupload fileupload-new" data-provides="fileupload">
 														<div class="input-append">
@@ -872,7 +1029,39 @@
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">Vertical Group</label>
+												<label class="col-md-3 control-label">Vertical Group
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalVerticalGroup"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalVerticalGroup" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<section class="form-group-vertical">
+	<input class="form-control" type="text" placeholder="Username">
+	<input class="form-control" type="text" placeholder="Email">
+	<input class="form-control last" type="password" placeholder="Password">
+</section>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<section class="form-group-vertical">
 														<input class="form-control" type="text" placeholder="Username">
@@ -883,7 +1072,48 @@
 											</div>
 						
 											<div class="form-group">
-												<label class="control-label col-md-3">Vertical Group w/ icon</label>
+												<label class="control-label col-md-3">Vertical Group w/ icon
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalVerticalIcon"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalVerticalIcon" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<section class="form-group-vertical">
+	<div class="input-group input-group-icon">
+		<span class="input-group-addon">
+			<span class="icon"><i class="fa fa-user"></i></span>
+		</span>
+		<input class="form-control" type="text" placeholder="Username">
+	</div>
+	<div class="input-group input-group-icon">
+		<span class="input-group-addon">
+			<span class="icon"><i class="fa fa-key"></i></span>
+		</span>
+		<input class="form-control" type="text" placeholder="Password">
+	</div>
+</section>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<section class="form-group-vertical">
 														<div class="input-group input-group-icon">
@@ -906,52 +1136,156 @@
 												<label class="col-md-3 control-label" for="inputSuccess">Input with success</label>
 												<div class="col-md-6">
 													<input type="text" class="form-control" id="inputSuccess">
+													<code>&lt;input type="text" class="form-control" id="inputSuccess"&gt;</code>
 												</div>
 											</div>
 											<div class="form-group has-warning">
 												<label class="col-md-3 control-label" for="inputWarning">Input with warning</label>
 												<div class="col-md-6">
 													<input type="text" class="form-control" id="inputWarning">
+													<code>&lt;input type="text" class="form-control" id="inputWarning"&gt;</code>
 												</div>
 											</div>
 											<div class="form-group has-error">
 												<label class="col-md-3 control-label" for="inputError">Input with error</label>
 												<div class="col-md-6">
 													<input type="text" class="form-control" id="inputError">
+													<code>&lt;input type="text" class="form-control" id="inputError"&gt;</code>
 												</div>
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputTooltip">Input with Tooltip</label>
+												<label class="col-md-3 control-label" for="inputTooltip">Input with Tooltip
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalTooltip"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalTooltip" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<input type="text" placeholder="Hover me" title="" data-toggle="tooltip"
+data-trigger="hover" class="form-control" data-original-title="Place your tooltip info here"
+id="inputTooltip">
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<input type="text" placeholder="Hover me" title="" data-toggle="tooltip" data-trigger="hover" class="form-control" data-original-title="Place your tooltip info here" id="inputTooltip">
 												</div>
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputPopover">Input with Popover</label>
+												<label class="col-md-3 control-label" for="inputPopover">Input with Popover
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalPopover"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalPopover" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<input type="text" placeholder="Click Here" class="form-control"
+data-toggle="popover" data-placement="top" data-original-title="The Title"
+data-content="Content goes here..." data-trigger="click" id="inputPopover">
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<input type="text" placeholder="Click Here" class="form-control" data-toggle="popover" data-placement="top" data-original-title="The Title" data-content="Content goes here..." data-trigger="click" id="inputPopover">
 												</div>
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">Column sizing</label>
+												<label class="col-md-3 control-label">Column sizing
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalSizing"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalSizing" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="col-sm-8">
+	<div class="row">
+		<div class="col-sm-2">
+			<input type="text" class="form-control" placeholder=".col-sm-2">															
+		</div>
+		<div class="visible-xs mb-md"></div>
+		<div class="col-sm-3">
+			<input type="text" class="form-control" placeholder=".col-sm-3">															
+		</div>
+		<div class="visible-xs mb-md"></div>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" placeholder=".col-sm-4">															
+		</div>
+	</div>						
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-sm-8">
 													<div class="row">
 														<div class="col-sm-2">
-															<input type="text" class="form-control" placeholder=".col-sm-2">
+															<input type="text" class="form-control" placeholder=".col-sm-2">															
 														</div>
 														<div class="visible-xs mb-md"></div>
 														<div class="col-sm-3">
-															<input type="text" class="form-control" placeholder=".col-sm-3">
+															<input type="text" class="form-control" placeholder=".col-sm-3">															
 														</div>
 														<div class="visible-xs mb-md"></div>
 														<div class="col-sm-4">
-															<input type="text" class="form-control" placeholder=".col-sm-4">
+															<input type="text" class="form-control" placeholder=".col-sm-4">															
 														</div>
-													</div>
-						
+													</div>						
 												</div>
 											</div>
 										</form>
@@ -973,24 +1307,133 @@
 												<label class="col-md-3 control-label" for="inputSuccess">Input sizing</label>
 												<div class="col-md-6">
 													<input class="form-control input-lg mb-md" type="text" placeholder=".input-lg">
+													<code>&lt;input class="form-control input-lg mb-md" type="text" placeholder=".input-lg"&gt;</code>
 													<input class="form-control mb-md" type="text" placeholder="Default input">
+													<code>&lt;input class="form-control mb-md" type="text" placeholder="Default input"&gt;</code>
 													<input class="form-control input-sm mb-md" type="text" placeholder=".input-sm">
+													<code>&lt;input class="form-control input-sm mb-md" type="text" placeholder=".input-sm"&gt;</code>
 												</div>
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputSuccess">Select sizing</label>
+												<label class="col-md-3 control-label" for="inputSuccess">Select Large
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalSelectLarge"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalSelectLarge" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<select class="form-control input-lg mb-md">
+	<option>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+</select>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<select class="form-control input-lg mb-md">
 														<option>Option 1</option>
 														<option>Option 2</option>
 														<option>Option 3</option>
 													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="inputSuccess">Select Medium
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalSelectMedium"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalSelectMedium" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<select class="form-control mb-md">
+	<option>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+</select>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
+												<div class="col-md-6">
 													<select class="form-control mb-md">
 														<option>Option 1</option>
 														<option>Option 2</option>
 														<option>Option 3</option>
 													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="inputSuccess">Select Small
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalSelectSmall"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalSelectSmall" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<select class="form-control input-sm mb-md">
+	<option>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+</select>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
+												<div class="col-md-6">
 													<select class="form-control input-sm mb-md">
 														<option>Option 1</option>
 														<option>Option 2</option>
@@ -1005,7 +1448,60 @@
 									<div class="panel-body">
 										<form class="form-horizontal form-bordered" method="get">
 											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputSuccess">Checkboxes and radios</label>
+												<label class="col-md-3 control-label" for="inputSuccess">Checkboxes and radios
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalChecksRadios"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalChecksRadios" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="checkbox">
+	<label>
+		<input type="checkbox" value="">
+		Option one is this and that—be sure to include why it's great
+	</label>
+</div>
+
+<div class="checkbox">
+	<label>
+		<input type="checkbox" value="">
+		Option one is this and that—be sure to include why it's great option one
+	</label>
+</div>
+
+<div class="radio">
+	<label>
+		<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+		Option one is this and that—be sure to include why it's great
+	</label>
+</div>
+<div class="radio">
+	<label>
+		<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		Option two can be something else and selecting it will deselect option one
+	</label>
+</div>	
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="checkbox">
 														<label>
@@ -1032,12 +1528,47 @@
 															<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
 															Option two can be something else and selecting it will deselect option one
 														</label>
-													</div>
-						
+													</div>						
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputSuccess">Inline checkboxes</label>
+												<label class="col-md-3 control-label" for="inputSuccess">Inline checkboxes
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalInlineCheck"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalInlineCheck" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<label class="checkbox-inline">
+	<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<label class="checkbox-inline">
 														<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
@@ -1051,7 +1582,41 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-md-3 control-label" for="inputSuccess">Selects</label>
+												<label class="col-md-3 control-label" for="inputSuccess">Single Selects
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalSingleSelect"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalSingleSelect" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<select class="form-control mb-md">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<select class="form-control mb-md">
 														<option>1</option>
@@ -1060,7 +1625,45 @@
 														<option>4</option>
 														<option>5</option>
 													</select>
-						
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="inputSuccess">Multiple Selects
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalMultiSelect"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalMultiSelect" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<select multiple="" class="form-control">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
+												<div class="col-md-6">
 													<select multiple="" class="form-control">
 														<option>1</option>
 														<option>2</option>
@@ -1087,7 +1690,52 @@
 									<div class="panel-body">
 										<form class="form-horizontal form-bordered" method="get">
 											<div class="form-group">
-												<label class="col-md-3 control-label">Basic examples</label>
+												<label class="col-md-3 control-label">Basic examples
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsBasic"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsBasic" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Success with Icon -->
+<div class="input-group mb-md">
+	<span class="input-group-addon btn-success">@</span>
+	<input type="text" class="form-control" placeholder="Username">
+</div>
+
+<!-- Warning with Icon -->
+<div class="input-group mb-md">
+	<input type="text" class="form-control">
+	<span class="input-group-addon btn-warning">.00</span>
+</div>
+
+<!-- Icons Left & Right -->
+<div class="input-group mb-md">
+	<span class="input-group-addon">$</span>
+	<input type="text" class="form-control">
+	<span class="input-group-addon ">.00</span>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group mb-md">
 														<span class="input-group-addon btn-success">@</span>
@@ -1107,7 +1755,51 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-md-3 control-label">Sizing</label>
+												<label class="col-md-3 control-label">Sizing
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsSizing"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsSizing" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Large Danger Input -->
+<div class="input-group input-group-lg mb-md">
+	<span class="input-group-addon btn-danger">@</span>
+	<input type="text" class="form-control input-lg" placeholder="Username">
+</div>
+
+<!-- Medium Left Icon Input -->
+<div class="input-group mb-md">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control" placeholder="Username">
+</div>
+
+<!-- Small Left Icon Input -->
+<div class="input-group input-group-sm mb-md">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control" placeholder="Username">
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group input-group-lg mb-md">
 														<span class="input-group-addon btn-danger">@</span>
@@ -1123,11 +1815,52 @@
 														<span class="input-group-addon">@</span>
 														<input type="text" class="form-control" placeholder="Username">
 													</div>
-						
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-md-3 control-label">Iconic</label>
+												<label class="col-md-3 control-label">Iconic
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsIconic"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsIconic" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Username -->
+<div class="input-group mb-md">
+	<span class="input-group-addon">
+		<i class="fa fa-user"></i>
+	</span>
+	<input type="text" class="form-control" placeholder="Username">
+</div>
+
+<!-- Password -->
+<div class="input-group mb-md">
+	<span class="input-group-addon">
+		<i class="fa fa-envelope"></i>
+	</span>
+	<input type="text" class="form-control" placeholder="Email">
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group mb-md">
 														<span class="input-group-addon">
@@ -1144,7 +1877,49 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-md-3 control-label">Checkbox and radio</label>
+												<label class="col-md-3 control-label">Checkbox and radio
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsChecksRadio"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsChecksRadio" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Checkbox -->
+<div class="input-group mb-md">
+	<span class="input-group-addon">
+		<input type="checkbox">
+	</span>
+	<input type="text" class="form-control">
+</div>
+
+<!-- Radio -->
+<div class="input-group mb-md">
+	<span class="input-group-addon">
+		<input type="radio">
+	</span>
+	<input type="text" class="form-control">
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group mb-md">
 														<span class="input-group-addon">
@@ -1163,7 +1938,49 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label class="col-md-3 control-label">Button addons</label>
+												<label class="col-md-3 control-label">Button addons
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsButtonAddons"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsButtonAddons" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Left Danger Button -->
+<div class="input-group mb-md">
+	<span class="input-group-btn">
+		<button class="btn btn-danger" type="button">Go!</button>
+	</span>
+	<input type="text" class="form-control">
+</div>
+
+<!-- Right Success Button -->
+<div class="input-group mb-md">
+	<input type="text" class="form-control">
+	<span class="input-group-btn">
+		<button class="btn btn-success" type="button">Go!</button>
+	</span>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group mb-md">
 														<span class="input-group-btn">
@@ -1182,7 +1999,50 @@
 											</div>
 						
 											<div class="form-group">
-												<label class="col-md-3 control-label">Segmented buttons</label>
+												<label class="col-md-3 control-label">Left segmented button
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsLeftSegment"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsLeftSegment" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="input-group mb-md">
+	<div class="input-group-btn">
+		<button tabindex="-1" class="btn btn-primary" type="button">Action</button>
+		<button tabindex="-1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+			<span class="caret"></span>
+		</button>
+		<ul role="menu" class="dropdown-menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
+	<input type="text" class="form-control">
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
 												<div class="col-md-6">
 													<div class="input-group mb-md">
 														<div class="input-group-btn">
@@ -1200,7 +2060,55 @@
 														</div>
 														<input type="text" class="form-control">
 													</div>
-						
+												</div>
+											</div>
+												
+											<div class="form-group">
+												<label class="col-md-3 control-label">Right segmented button
+												<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalGroupsRightSegment"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalGroupsRightSegment" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="input-group mb-md">
+	<input type="text" class="form-control">
+	<div class="input-group-btn">
+		<button tabindex="-1" class="btn btn-primary" type="button">Action</button>
+		<button tabindex="-1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+			<span class="caret"></span>
+		</button>
+		<ul role="menu" class="dropdown-menu pull-right">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+												</label>
+												<div class="col-md-6">
 													<div class="input-group mb-md">
 														<input type="text" class="form-control">
 														<div class="input-group-btn">
@@ -1243,7 +2151,75 @@
 											<div class="col-md-6">
 												<form class="form-horizontal form-bordered" method="get">
 													<div class="form-group">
-														<label class="col-sm-4 control-label">Checkboxes</label>
+														<label class="col-sm-4 control-label">Checkboxes
+														<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalCustomCheckboxes"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalCustomCheckboxes" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Checkbox Default -->
+<div class="checkbox-custom checkbox-default">
+	<input type="checkbox" checked="" id="checkboxExample1">
+	<label for="checkboxExample1">Checkbox Default</label>
+</div>
+
+<!-- Checkbox Primary -->
+<div class="checkbox-custom checkbox-primary">
+	<input type="checkbox" checked="" id="checkboxExample2">
+	<label for="checkboxExample2">Checkbox Primary</label>
+</div>
+
+<!-- Checkbox Succsss -->
+<div class="checkbox-custom checkbox-success">
+	<input type="checkbox" checked="" id="checkboxExample3">
+	<label for="checkboxExample3">Checkbox Success</label>
+</div>
+
+<!-- Checkbox Warning -->
+<div class="checkbox-custom checkbox-warning">
+	<input type="checkbox" checked="" id="checkboxExample4">
+	<label for="checkboxExample4">Checkbox Warning</label>
+</div>
+
+<!-- Checkbox Dander -->
+<div class="checkbox-custom checkbox-danger">
+	<input type="checkbox" checked="" id="checkboxExample5">
+	<label for="checkboxExample5">Checkbox Danger</label>
+</div>
+
+<!-- Checkbox Disabled -->
+<div class="checkbox-custom">
+	<input type="checkbox" disabled="">
+	<label>Checkbox Disabled</label>
+</div>
+
+<!-- Checkbox Checked & Disabled -->
+<div class="checkbox-custom">
+	<input type="checkbox" disabled="" checked="">
+	<label>Checked &amp; Disabled</label>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+														</label>
 						
 														<div class="col-sm-8">
 															<div class="checkbox-custom checkbox-default">
@@ -1288,7 +2264,75 @@
 											<div class="col-md-6">
 												<form class="form-horizontal form-bordered" method="get">
 													<div class="form-group">
-														<label class="col-sm-4 control-label">Radios</label>
+														<label class="col-sm-4 control-label">Radios
+														<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalCustomRadios"><i class="fa fa-file-code-o"></i></a>
+
+												<div id="modalCustomRadios" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<!-- Radio Default -->
+<div class="radio-custom">
+	<input type="radio" id="radioExample1" name="radioExample">
+	<label for="radioExample1">Radio Default</label>
+</div>
+
+<!-- Radio Primary -->
+<div class="radio-custom radio-primary">
+	<input type="radio" id="radioExample2" name="radioExample">
+	<label for="radioExample2">Radio Primary</label>
+</div>
+
+<!-- Radio Success -->
+<div class="radio-custom radio-success">
+	<input type="radio" id="radioExample3" name="radioExample">
+	<label for="radioExample3">Radio Success</label>
+</div>
+
+<!-- Radio Warning -->
+<div class="radio-custom radio-warning">
+	<input type="radio" id="radioExample4" name="radioExample">
+	<label for="radioExample4">Radio Warning</label>
+</div>
+
+<!-- Radio Danger -->
+<div class="radio-custom radio-danger">
+	<input type="radio" id="radioExample5" name="radioExample">
+	<label for="radioExample5">Radio Danger</label>
+</div>
+
+<!-- Radio Disabled -->
+<div class="radio-custom">
+	<input type="radio" disabled="">
+	<label>Radio Disabled</label>
+</div>
+
+<!-- Radio Checked & Disabled -->
+<div class="radio-custom">
+	<input type="radio" disabled="" checked="">
+	<label>Checked &amp; Disabled</label>
+</div>
+																	</script></code></pre>
+																</div>
+															</div>
+														</div>
+														<footer class="panel-footer">
+															<div class="row">
+																<div class="col-md-12 text-right">
+																	<button class="btn btn-default modal-confirm">Close</button>
+																</div>
+															</div>
+														</footer>
+													</section>
+												</div>
+												<!-- Code Modal -->
+														</label>
 						
 														<div class="col-sm-8">
 															<div class="radio-custom">
@@ -1325,7 +2369,6 @@
 																<input type="radio" disabled="" checked="">
 																<label>Checked &amp; Disabled</label>
 															</div>
-						
 														</div>
 													</div>
 												</form>
@@ -1353,12 +2396,14 @@
 												<label class="col-md-3 control-label" for="textareaDefault">Textarea</label>
 												<div class="col-md-6">
 													<textarea class="form-control" rows="3" id="textareaDefault"></textarea>
+													<code>&lt;textarea class="form-control" rows="3" id="textareaDefault"&gt;&lt;/textarea&gt;</code>
 												</div>
 											</div>
 											<div class="form-group">
 												<label class="col-md-3 control-label" for="textareaAutosize">Textarea autosize</label>
 												<div class="col-md-6">
 													<textarea class="form-control" rows="3" id="textareaAutosize" data-plugin-textarea-autosize></textarea>
+													<code>&lt;textarea class="form-control" rows="3" id="textareaAutosize" data-plugin-textarea-autosize&gt;&lt;/textarea&gt;</code>
 												</div>
 											</div>
 										</form>
@@ -1375,6 +2420,152 @@
 									<div class="panel-heading">
 										<div class="panel-title">
 											<div class="panel-actions">
+											<!-- Code Modal -->
+												<a class="mb-xs mt-xs mr-xs modal-basic" type="button" href="#modalInputGrid"><i class="fa fa-file-code-o"></i> Warning - Large! </a>
+
+												<div id="modalInputGrid" class="modal-block mfp-hide">
+													<section class="panel">
+														<header class="panel-heading">
+															<h2 class="panel-title">HTML Code</h2>
+														</header>
+														<div class="panel-body">
+															<div class="modal-wrapper">
+																<div class="modal-text">																
+																	<pre class=" language-markup" rel="html"><code class=" language-markup"><script type="prism-html-markup">
+<div class="row">
+
+<!-- Row 1 -->
+	<div class="col-md-12 form-group">
+		<input type="text" placeholder=".col-md-12" class="form-control">
+	</div>
+
+<!-- Row 2 -->
+	<div class="col-md-6 form-group">
+		<input type="text" placeholder=".col-md-6" class="form-control">
+	</div>
+
+	<div class="col-md-6 form-group">
+		<input type="text" placeholder=".col-md-6" class="form-control">
+	</div>
+
+<!-- Row 3 -->
+	<div class="col-md-4 form-group">
+		<input type="text" placeholder=".col-md-4" class="form-control">
+	</div>
+
+	<div class="col-md-4 form-group">
+		<input type="text" placeholder=".col-md-4" class="form-control">
+	</div>
+
+	<div class="col-md-4 form-group">
+		<input type="text" placeholder=".col-md-4" class="form-control">
+	</div>
+
+<!-- Row 4 -->
+	<div class="col-md-3 form-group">
+		<input type="text" placeholder=".col-md-3" class="form-control">
+	</div>
+
+	<div class="col-md-3 form-group">
+		<input type="text" placeholder=".col-md-3" class="form-control">
+	</div>
+
+	<div class="col-md-3 form-group">
+		<input type="text" placeholder=".col-md-3" class="form-control">
+	</div>
+
+	<div class="col-md-3 form-group">
+		<input type="text" placeholder=".col-md-3" class="form-control">
+	</div>
+
+<!-- Row 5 -->
+	<div class="col-md-2 form-group">
+		<input type="text" placeholder=".col-md-2" class="form-control">
+	</div>
+
+	<div class="col-md-2 form-group">
+		<input type="text" placeholder=".col-md-2" class="form-control">
+	</div>
+
+	<div class="col-md-2 form-group">
+		<input type="text" placeholder=".col-md-2" class="form-control">
+	</div>
+
+	<div class="col-md-2 form-group">
+		<input type="text" placeholder=".col-md-2" class="form-control">
+	</div>
+
+	<div class="col-md-2 form-group">
+		<input type="text" placeholder=".col-md-2" class="form-control">
+	</div>
+
+	<div class="col-md-2 form-group">
+		<input type="text" placeholder=".col-md-2" class="form-control">
+	</div>
+
+<!-- Row 6 -->
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+
+	<div class="col-md-1 form-group">
+		<input type="text" placeholder=".col-md-1" class="form-control">
+	</div>
+</div>
+																</script></code></pre>
+															</div>
+														</div>
+													</div>
+													<footer class="panel-footer">
+														<div class="row">
+															<div class="col-md-12 text-right">
+																<button class="btn btn-default modal-confirm">Close</button>
+															</div>
+														</div>
+													</footer>
+												</section>
+											</div>
+											<!-- Code Modal -->
 												<a href="#" class="fa fa-caret-down"></a>
 												<a href="#" class="fa fa-times"></a>
 											</div>
@@ -1585,6 +2776,7 @@
 
 		<!-- Vendor -->
 		<script src="assets/vendor/jquery/jquery.js"></script>		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		<script src="assets/vendor/prism/prism.js"></script>
 		
 		<!-- Specific Page Vendor -->		<script src="assets/vendor/jquery-autosize/jquery.autosize.js"></script>		<script src="assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 		
@@ -1596,6 +2788,9 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="assets/javascripts/theme.init.js"></script>
+		
+		<!-- Examples -->
+		<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
 
 	</body>
 </html>
